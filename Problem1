@@ -5,6 +5,7 @@ class Solution {
         if(n == 0){
             return result;
         }
+//using backtracking, check every position in 1st row and if we can place n Q's by final row, add to result
         int board[][] = new int[n][n];
         backtrack(board, n, 0);
         return result;
